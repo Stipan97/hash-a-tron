@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../assets/fonts/Avenir/AvenirLTStd-Roman.eot');
+    src: url('../assets/fonts/Avenir/AvenirLTStd-Roman.eot?#iefix')
+            format('embedded-opentype'),
+        url('../assets/fonts/Avenir/AvenirLTStd-Roman.woff2') format('woff2'),
+        url('../assets/fonts/Avenir/AvenirLTStd-Roman.woff') format('woff'),
+        url('../assets/fonts/Avenir/AvenirLTStd-Roman.svg#AvenirLTStd-Roman')
+            format('svg');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter-Regular.eot');
+    src: url('../assets/fonts/Inter/Inter-Regular.eot?#iefix')
+            format('embedded-opentype'),
+        url('../assets/fonts/Inter/Inter-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Inter/Inter-Regular.woff') format('woff'),
+        url('../assets/fonts/Inter/Inter-Regular.svg#Inter-Regular')
+            format('svg');
+}
+
+body {
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#root {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    height: 100%;
+    margin: auto;
+}
+
+.container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header-container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 60px;
+    padding-top: 32px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header p {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    color: #383838;
+}
+
+.header button {
+    font-size: 16px;
+    padding: 8px 36px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 36px;
+    margin-top: 12px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: whitesmoke;
+}
+
+.topping-selector {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+    line-height: 48px;
+    text-align: center;
+    color: #383838;
+}
+
+.heading2 {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0;
+    line-height: 28px;
+    color: #383838;
+    padding-bottom: 12px;
+}
+
+.heading3 {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 0;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    color: #8c8c8c;
+    text-transform: uppercase;
+}
+
+.error-message {
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #c42e2e;
+}
