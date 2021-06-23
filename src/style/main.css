@@ -31,22 +31,6 @@ body {
     height: 100%;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 800px;
-    height: 100%;
-    margin: auto;
-}
-
-.container-home {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
 .header-container {
     max-width: 800px;
     display: flex;
