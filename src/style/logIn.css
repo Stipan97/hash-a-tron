@@ -65,26 +65,36 @@
     outline: none;
     background-color: #ececf3;
     border-radius: 72px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 21px;
     line-height: 20px;
 }
 
 .input-with-button-wrapper {
-    align-items: center;
+    width: 322px;
+    max-width: 322px;
     display: flex;
-    max-width: 312px;
-    width: 312px;
-    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
+    /* padding: 0 21px; */
     background: #ececf3;
     border-radius: 72px;
     margin-top: 12px;
 }
 
+.input-with-button {
+    width: 100%;
+    height: 56px;
+    padding: 0 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .input-with-button input {
     border: none;
-    margin-left: 16px;
-    margin-right: 16px;
+    width: 100%;
+    /* margin-left: 16px;
+    margin-right: 16px; */
     font-family: Avenir;
     font-style: normal;
     font-weight: normal;
@@ -93,6 +103,7 @@
     color: #8c8c8c;
     outline: none;
     background-color: #ececf3;
+    margin-right: 20px;
 }
 
 .input-with-button button {
@@ -106,6 +117,9 @@
     line-height: 20px;
     color: #383838;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-with-button button:hover {
@@ -127,8 +141,9 @@
 }
 
 .auth-container label {
-    padding-left: 16px;
-    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
     padding-bottom: 12px;
     font-family: Avenir;
     font-style: normal;
@@ -159,6 +174,11 @@
 
 .login-linkto {
     padding-top: 12px;
+    text-decoration: none;
+}
+
+.login-linkto:hover {
+    color: #354c8c;
 }
 
 .provider-login {

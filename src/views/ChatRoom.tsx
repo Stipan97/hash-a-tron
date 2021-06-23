@@ -60,14 +60,22 @@ export const ChatRoom: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="chat-container">
       {currentLoggedUser ? (
         <>
-          <p>key: {key}</p>
-          <Messages roomKey={key} />
-          <input type="text" value={message} onChange={onChangeMessage} />
-          <button onClick={onMessageSend}>Send</button>
-          <button onClick={onClickDeleteRoom}>Delete Room</button>
+          <div className="chat-body">
+            <div className="chat-header">
+              <div className="chat-key"><span className="chat-header__title">Room key</span><span className="chat-header__key">{key}</span></div>
+              <button className="chat-delete" onClick={onClickDeleteRoom}>Delete Room</button>
+            </div>
+            <div className="chat-main">
+              <Messages roomKey={key} />
+            </div>
+            <div className="chat-footer">
+              <input className="chat-input" placeholder="Message..." type="text" value={message} onChange={onChangeMessage} />
+              <button className="chat-send" onClick={onMessageSend}>Send</button>
+            </div>
+          </div>
         </>
       ) : (
         <h1 className="heading">You need to be logged in.</h1>

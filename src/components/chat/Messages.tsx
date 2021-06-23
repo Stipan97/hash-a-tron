@@ -32,13 +32,14 @@ export const Messages: React.FC<MessagesProps> = ({ roomKey }) => {
   }, [roomKey]);
 
   return (
-    <div>
+    <div className="chat-component">
       {messages.map((message) => (
-        <div key={message.time}>
-          <p>
-            {message.username}: {decryptMessage(message.message, roomKey)}
-          </p>
-          <p>{new Date(parseInt(message.time)).toLocaleString()}</p>
+        <div className="chat-component__message" key={message.time}>
+          <span className="message__text">
+            <span className="message__text-username">{message.username}</span>
+            <span className="message__text-message">{decryptMessage(message.message, roomKey)}</span>
+          </span>
+          <p className="message__time">{new Date(parseInt(message.time)).toLocaleString()}</p>
         </div>
       ))}
     </div>
